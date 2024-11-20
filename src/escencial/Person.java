@@ -1,61 +1,52 @@
 package escencial;
-
-public abstract class Person {
-
+/**
+ * Super class of person. It initialises the attributes and contains methods
+ * that allow information to be obtained.
+ * @author calet
+ */
+public class Person {
     private String name;
-
     private String email;
+    private int id;
 
-    private int ID;
-
-    public Person(String name, String email, int ID) {
+    public Person(String name, String email, int id) {
         this.name = name;
         this.email = email;
-        this.ID = ID;
+        this.id = id;
     }
-
     /**
-     * @return the name
+     * Gets the name of the person
+     * @return 
      */
     public String getName() {
         return name;
     }
-
     /**
-     * @param name the name to set
+     * Allows change the person¨s name 
+     * @param name 
      */
     public void setName(String name) {
         this.name = name;
     }
-
     /**
-     * @return the email
+     * Gets the email of the person
+     * @return 
      */
     public String getEmail() {
         return email;
     }
-
     /**
-     * @param email the email to set
+     * Allows change the person¨s email
+     * @param email 
      */
     public void setEmail(String email) {
         this.email = email;
     }
-
     /**
-     * @return the ID
+     * Gets the ID of the person
+     * @return 
      */
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
-
-    /**
-     * @param ID the ID to set
-     */
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-    
-    
-    
 }

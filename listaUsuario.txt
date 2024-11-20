@@ -1,0 +1,6 @@
+1,Admin User,admin@example.com,admin
+2,Regular User 1,regular1@example.com,regular
+3,Regular User 2,regular2@example.com,regular
+4,Regular User 3,regular3@example.com,regular
+0,calet,caletaltamirano@gmail.com,admin
+2024,yileidy,saodnouioi,regular

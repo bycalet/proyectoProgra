@@ -1,87 +1,39 @@
 package escencial;
 
-import java.util.Date;
-
-
+import java.time.LocalDateTime;
+/**
+ * Class for a reservation. Initialise and use objects from other classes.
+ * @author calet
+ */
 public class Reservation {
-
-    private Date date;
-
+    private Person user;
     private SportSpace space;
+    private LocalDateTime dateTime;
 
-    private String state;
-
-    private Regular regular;
-
-    public Reservation(Date date, SportSpace space, String state, Regular regular) {
-        this.date = date;
+    public Reservation(Person user, SportSpace space, LocalDateTime dateTime) {
+        this.user = user;
         this.space = space;
-        this.state = state;
-        this.regular = regular;
+        this.dateTime = dateTime;
     }
-    
-    
-    
-
-    public void cancel() {
-    }
-
-    public void confirm() {
-    }
-
     /**
-     * @return the date
+     * Gets the user of Person class
+     * @return 
      */
-    public Date getDate() {
-        return date;
+    public Person getUser() {
+        return user;
     }
-
     /**
-     * @param date the date to set
-     */
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    /**
-     * @return the space
+     * Gets the space of SportSpace class
+     * @return 
      */
     public SportSpace getSpace() {
         return space;
     }
-
     /**
-     * @param space the space to set
+     * Gets the date and hour in the established format
+     * @return 
      */
-    public void setSpace(SportSpace space) {
-        this.space = space;
-    }
-
-    /**
-     * @return the state
-     */
-    public String getState() {
-        return state;
-    }
-
-    /**
-     * @param state the state to set
-     */
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    /**
-     * @return the regular
-     */
-    public Regular getRegular() {
-        return regular;
-    }
-
-    /**
-     * @param regular the regular to set
-     */
-    public void setRegular(Regular regular) {
-        this.regular = regular;
+    public LocalDateTime getDateTime() {
+        return dateTime;
     }
 }

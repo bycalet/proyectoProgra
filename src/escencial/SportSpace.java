@@ -1,62 +1,41 @@
+
 package escencial;
-
-public abstract class SportSpace implements Space {
-
-    private String namePlace;
-
+/**
+ * The SportSpace class represents a sports space that can be booked.
+ * It contains the name of the space and its availability status.
+ * 
+ * This class provides methods to retrieve and modify the availability status,
+ * as well as to obtain the name of the sports space.
+ * 
+ * @author calet
+ */
+public class SportSpace {
+    private String name;
     private boolean available;
-
-    private int capacity;
-
-    public SportSpace(String namePlace, boolean available, int capacity) {
-        this.namePlace = "";
-        this.available = true;
-        this.capacity = 0;
-    }
     
-    public boolean checkAvailability() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public SportSpace(String name) {
+        this.name = name;
+        this.available = true;
     }
-
     /**
-     * @return the namePlace
+     * This method allows you to obtain the name of the sports space
+     * @return 
      */
-    public String getNamePlace() {
-        return namePlace;
+    public String getName() {
+        return name;
     }
-
     /**
-     * @param namePlace the namePlace to set
-     */
-    public void setNamePlace(String namePlace) {
-        this.namePlace = namePlace;
-    }
-
-    /**
-     * @return the available
+     * This method returns the availability
+     * @return 
      */
     public boolean isAvailable() {
         return available;
     }
-
     /**
-     * @param available the available to set
+     * This method allows you to change the status
+     * @param available 
      */
     public void setAvailable(boolean available) {
         this.available = available;
-    }
-
-    /**
-     * @return the capacity
-     */
-    public int getCapacity() {
-        return capacity;
-    }
-
-    /**
-     * @param capacity the capacity to set
-     */
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
     }
 }
